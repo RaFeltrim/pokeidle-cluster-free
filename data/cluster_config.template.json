@@ -1,0 +1,22 @@
+﻿{
+  "accounts": [
+    {
+      "id": "acc_1",
+      "port": 9222,
+      "nick": "Conta 1",
+      "email": "",
+      "profileDir": "C:\\temp\\pokeidle_profiles\\acc_1"
+    },
+    {
+      "id": "acc_2",
+      "port": 9223,
+      "nick": "Conta 2",
+      "email": "",
+      "profileDir": "C:\\temp\\pokeidle_profiles\\acc_2"
+    }
+  ],
+  "hubPort": 4567,
+  "economyMode": true,
+  "minCoinReserve": 50000,
+  "autoCatcherEnabled": true
+}

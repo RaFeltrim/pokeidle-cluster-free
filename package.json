@@ -1,0 +1,27 @@
+{
+  "name": "pokeidle-cluster-free",
+  "version": "1.0.0",
+  "description": "Open-source dual-account cluster automation, telemetry streamer, and native WPF tray HUD for Pokéidle.io",
+  "main": "src/cluster_manager.js",
+  "scripts": {
+    "start": "node src/cluster_manager.js",
+    "status": "node src/analyzer.js",
+    "streamer": "node src/streamer.js",
+    "hub": "node src/webhook_hub.js"
+  },
+  "keywords": [
+    "pokeidle",
+    "bot",
+    "cluster",
+    "automation",
+    "cdp",
+    "chrome-devtools",
+    "hud",
+    "wpf"
+  ],
+  "author": "RaFeltrim",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

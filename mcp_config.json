@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-chrome-devtools"
+      ],
+      "timeoutSeconds": -1,
+      "tools": {
+        "evaluate_script": {
+          "eager": true,
+          "background": "off"
+        }
+      }
+    }
+  }
+}
+

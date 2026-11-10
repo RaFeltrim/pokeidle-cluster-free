@@ -279,6 +279,23 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
                         </Grid>
                     </Border>
 
+                    <!-- Account Management: Logout & Password Change -->
+                    <Border Background="#400F172A" BorderBrush="#3038BDF8" BorderThickness="1" CornerRadius="8" Padding="8,6" Margin="0,0,0,6">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Button Name="BtnAccountLogout" Content="🚪 Sair da Conta" Background="#30EF4444" BorderBrush="#60EF4444" BorderThickness="1" Foreground="#FCA5A5" FontWeight="SemiBold" FontSize="9" Padding="6,3" Cursor="Hand" ToolTip="Encerrar a sessão desta conta e remover credenciais salvas" HorizontalAlignment="Left"/>
+                            
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                                <Button Name="BtnAccountChangePass" Content="🔑 Alterar Senha" Background="#3038BDF8" BorderBrush="#6038BDF8" BorderThickness="1" Foreground="#38BDF8" FontWeight="SemiBold" FontSize="9" Padding="6,3" Cursor="Hand" ToolTip="Atualizar senha da conta salva localmente"/>
+                                <Button Name="BtnHelpPassword" Content="❓" Width="18" Height="18" Background="Transparent" BorderThickness="0" Foreground="#FACC15" FontWeight="Bold" FontSize="9" Cursor="Help" ToolTip="ALTERE SOMENTE SE SENHA DA CONTA FOI TROCADA" Margin="3,0,0,0"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
                     <!-- Account Highlights of the last hour -->
                     <Border Background="#400F172A" BorderBrush="#2094A3B8" BorderThickness="1" CornerRadius="8" Padding="8,6" Margin="0,0,0,4">
                         <StackPanel>
@@ -286,6 +303,37 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
                             <StackPanel Name="ListAccountEvents">
                                 <TextBlock Text="Nenhum evento registrado nesta hora." FontSize="8" Foreground="#64748B"/>
                             </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <!-- VIEW 3: CREDENTIALS / ONBOARDING / CHANGE PASSWORD MODAL -->
+                <StackPanel Name="ViewLoginModal" Visibility="Collapsed">
+                    <Border Background="#F01E293B" BorderBrush="#6038BDF8" BorderThickness="1" CornerRadius="10" Padding="12,10" Margin="0,0,0,4">
+                        <StackPanel>
+                            <Grid Margin="0,0,0,8">
+                                <TextBlock Name="TxtLoginModalTitle" Text="🔑 Gerenciar Acesso da Conta" FontSize="11" FontWeight="Bold" Foreground="#38BDF8"/>
+                                <Button Name="BtnCloseLoginModal" Content="✕" Width="18" Height="18" Background="Transparent" Foreground="#94A3B8" BorderThickness="0" Cursor="Hand" HorizontalAlignment="Right"/>
+                            </Grid>
+                            <TextBlock Name="TxtLoginModalSubtitle" Text="Insira as credenciais de acesso ao Pokéidle.io:" FontSize="9" Foreground="#94A3B8" Margin="0,0,0,8"/>
+                            
+                            <TextBlock Text="USUÁRIO / E-MAIL" FontSize="8" FontWeight="Bold" Foreground="#64748B" Margin="0,0,0,2"/>
+                            <TextBox Name="InputLoginUser" Height="24" Background="#30000000" Foreground="#F8FAFC" BorderBrush="#4064748B" BorderThickness="1" Padding="4,2" FontSize="10" Margin="0,0,0,8"/>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                                <TextBlock Text="SENHA DA CONTA" FontSize="8" FontWeight="Bold" Foreground="#64748B"/>
+                                <TextBlock Text=" ❓" FontSize="8" Foreground="#FACC15" Cursor="Help" ToolTip="ALTERE SOMENTE SE SENHA DA CONTA FOI TROCADA" Margin="3,0,0,0"/>
+                            </StackPanel>
+                            <PasswordBox Name="InputLoginPass" Height="24" Background="#30000000" Foreground="#F8FAFC" BorderBrush="#4064748B" BorderThickness="1" Padding="4,2" FontSize="10" Margin="0,0,0,10"/>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Name="BtnCancelLoginModal" Content="Cancelar" Grid.Column="0" Background="#2064748B" BorderBrush="#4064748B" BorderThickness="1" Foreground="#CBD5E1" FontSize="9" Padding="4" Margin="0,0,4,0" Cursor="Hand"/>
+                                <Button Name="BtnSaveLoginModal" Content="Salvar Credencial" Grid.Column="1" Background="#22C55E" BorderThickness="0" Foreground="#0F172A" FontWeight="Bold" FontSize="9" Padding="4" Margin="4,0,0,0" Cursor="Hand"/>
+                            </Grid>
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -347,6 +395,20 @@ $txtDetailTrainerLv = $window.FindName("TxtDetailTrainerLv")
 $txtDetailHunt = $window.FindName("TxtDetailHunt")
 $txtDetailPort = $window.FindName("TxtDetailPort")
 $listAccountEvents = $window.FindName("ListAccountEvents")
+
+# Account Management & Login Modal Controls
+$btnAccountLogout = $window.FindName("BtnAccountLogout")
+$btnAccountChangePass = $window.FindName("BtnAccountChangePass")
+$btnHelpPassword = $window.FindName("BtnHelpPassword")
+
+$viewLoginModal = $window.FindName("ViewLoginModal")
+$txtLoginModalTitle = $window.FindName("TxtLoginModalTitle")
+$txtLoginModalSubtitle = $window.FindName("TxtLoginModalSubtitle")
+$btnCloseLoginModal = $window.FindName("BtnCloseLoginModal")
+$inputLoginUser = $window.FindName("InputLoginUser")
+$inputLoginPass = $window.FindName("InputLoginPass")
+$btnCancelLoginModal = $window.FindName("BtnCancelLoginModal")
+$btnSaveLoginModal = $window.FindName("BtnSaveLoginModal")
 
 # State
 $script:selectedPort = $null
@@ -493,7 +555,152 @@ $cardAcc2.Add_MouseLeftButtonDown({
 $btnBackToSummary.Add_Click({
     $script:selectedPort = $null
     $viewDetail.Visibility = [System.Windows.Visibility]::Collapsed
+    $viewLoginModal.Visibility = [System.Windows.Visibility]::Collapsed
     $viewSummary.Visibility = [System.Windows.Visibility]::Visible
+})
+
+# ========================================================
+# ACCOUNT MANAGEMENT & CREDENTIAL CONFIGURATION
+# ========================================================
+$configFile = Join-Path $projectRoot "data\cluster_config.json"
+$configTemplateFile = Join-Path $projectRoot "data\cluster_config.template.json"
+
+function Get-ClusterConfig {
+    if (Test-Path $configFile) {
+        try {
+            return Get-Content $configFile -Raw -Encoding UTF8 | ConvertFrom-Json
+        } catch {}
+    }
+    if (Test-Path $configTemplateFile) {
+        try {
+            return Get-Content $configTemplateFile -Raw -Encoding UTF8 | ConvertFrom-Json
+        } catch {}
+    }
+    return $null
+}
+
+function Save-ClusterConfig($cfg) {
+    try {
+        $json = $cfg | ConvertTo-Json -Depth 5
+        [System.IO.File]::WriteAllText($configFile, $json, [System.Text.Encoding]::UTF8)
+    } catch {}
+}
+
+# "?" Help Tooltip Click
+$btnHelpPassword.Add_Click({
+    [System.Windows.MessageBox]::Show(
+        "ALTERE SOMENTE SE SENHA DA CONTA FOI TROCADA`n`nAo alterar a senha aqui, ela será utilizada pelo cluster nas próximas inicializações.",
+        "Segurança da Conta",
+        [System.Windows.MessageBoxButton]::OK,
+        [System.Windows.MessageBoxImage]::Information
+    ) | Out-Null
+})
+
+# Change Password Button
+$btnAccountChangePass.Add_Click({
+    if (-not $script:selectedPort) { return }
+    $cfg = Get-ClusterConfig
+    $accCfg = $null
+    if ($cfg -and $cfg.accounts) {
+        $accCfg = $cfg.accounts | Where-Object { $_.port -eq $script:selectedPort }
+    }
+    $targetNick = if ($accCfg) { $accCfg.nick } else { "Porta $($script:selectedPort)" }
+    $txtLoginModalTitle.Text = "🔑 Alterar Senha — $targetNick"
+    $txtLoginModalSubtitle.Text = "Atualize o login e a senha desta conta para conexões automáticas:"
+    $inputLoginUser.Text = if ($accCfg -and $accCfg.email) { $accCfg.email } else { "" }
+    $inputLoginPass.Password = ""
+    $viewDetail.Visibility = [System.Windows.Visibility]::Collapsed
+    $viewSummary.Visibility = [System.Windows.Visibility]::Collapsed
+    $viewLoginModal.Visibility = [System.Windows.Visibility]::Visible
+    $inputLoginPass.Focus()
+})
+
+# Logout Account Button
+$btnAccountLogout.Add_Click({
+    if (-not $script:selectedPort) { return }
+    $cfg = Get-ClusterConfig
+    $targetNick = "Porta $($script:selectedPort)"
+    if ($cfg -and $cfg.accounts) {
+        $acc = $cfg.accounts | Where-Object { $_.port -eq $script:selectedPort }
+        if ($acc) {
+            $targetNick = $acc.nick
+            $acc.email = ""
+        }
+        Save-ClusterConfig $cfg
+    }
+    [System.Windows.MessageBox]::Show(
+        "Você desvinculou as credenciais salvas de $targetNick.`nPara reconectar com novos dados, utilize 'Alterar Senha'.",
+        "Sair da Conta",
+        [System.Windows.MessageBoxButton]::OK,
+        [System.Windows.MessageBoxImage]::Information
+    ) | Out-Null
+})
+
+# Save Login Modal
+$btnSaveLoginModal.Add_Click({
+    $userVal = $inputLoginUser.Text.Trim()
+    $passVal = $inputLoginPass.Password
+    if (-not $userVal) {
+        [System.Windows.MessageBox]::Show("Por favor, informe o usuário ou e-mail da conta.", "Aviso", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning) | Out-Null
+        return
+    }
+
+    $cfg = Get-ClusterConfig
+    if (-not $cfg) {
+        $cfg = [PSCustomObject]@{
+            accounts = @()
+            hubPort = 4567
+            economyMode = $true
+            minCoinReserve = 50000
+            autoCatcherEnabled = $true
+        }
+    }
+    
+    $accCfg = $null
+    if ($cfg.accounts) {
+        $accCfg = $cfg.accounts | Where-Object { $_.port -eq $script:selectedPort }
+    }
+    if ($accCfg) {
+        $accCfg.email = $userVal
+    } else {
+        $newAcc = [PSCustomObject]@{
+            id = "acc_$($script:selectedPort)"
+            port = $script:selectedPort
+            nick = $userVal
+            email = $userVal
+            profileDir = "C:\temp\pokeidle_profiles\acc_$($script:selectedPort)"
+        }
+        $cfg.accounts += $newAcc
+    }
+    Save-ClusterConfig $cfg
+
+    [System.Windows.MessageBox]::Show("Credenciais salvas com sucesso localmente!", "Sucesso", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information) | Out-Null
+
+    $viewLoginModal.Visibility = [System.Windows.Visibility]::Collapsed
+    if ($script:selectedPort) {
+        $viewDetail.Visibility = [System.Windows.Visibility]::Visible
+    } else {
+        $viewSummary.Visibility = [System.Windows.Visibility]::Visible
+    }
+})
+
+# Close/Cancel Login Modal
+$btnCloseLoginModal.Add_Click({
+    $viewLoginModal.Visibility = [System.Windows.Visibility]::Collapsed
+    if ($script:selectedPort) {
+        $viewDetail.Visibility = [System.Windows.Visibility]::Visible
+    } else {
+        $viewSummary.Visibility = [System.Windows.Visibility]::Visible
+    }
+})
+
+$btnCancelLoginModal.Add_Click({
+    $viewLoginModal.Visibility = [System.Windows.Visibility]::Collapsed
+    if ($script:selectedPort) {
+        $viewDetail.Visibility = [System.Windows.Visibility]::Visible
+    } else {
+        $viewSummary.Visibility = [System.Windows.Visibility]::Visible
+    }
 })
 
 function Format-Coins([double]$val) {

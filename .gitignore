@@ -3,6 +3,8 @@ scratch/
 *.log
 data/*.log
 data/capture_history_port_*.json
+data/game_history.json
+data/live_events.json
 .vscode/
 .idea/
 *.tmp

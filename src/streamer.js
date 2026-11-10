@@ -7,6 +7,7 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 const WebSocket = require('ws');
+const { healAndProgressAccount } = require('./auto_heal_and_progression');
 
 const HUB_URL = 'http://127.0.0.1:4567/webhook';
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -119,6 +120,8 @@ const lastState = {
   9223: { pokeLevel: null, trainerLevel: null, lastLog: '' }
 };
 
+const isRecovering = { 9222: false, 9223: false };
+
 async function queryAcc(session, isAcc1) {
   const raw = await session.cdp.send('Runtime.evaluate', {
     expression: `(() => {
@@ -139,22 +142,10 @@ async function queryAcc(session, isAcc1) {
         }
       }
 
-      // Auto-Recuperação se a equipe desmaiar e for para o Centro Pokémon
+      // Detecta se a equipe está fora de combate / Centro Pokémon / botão Curar ativo
       const ecoOnde = document.querySelector('#eco-onde')?.innerText || '';
-      const isFora = fullText.includes('fora da caça') || ecoOnde.includes('Centro Pokemon');
-      if (isFora) {
-        const curarBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.includes('Curar'));
-        if (curarBtn) curarBtn.click();
-
-        const targetSlug = ${isAcc1 ? "'paras'" : "'geodude'"};
-        let huntBtn = document.querySelector('button.ml-linha[data-slug="' + targetSlug + '"]');
-        if (!huntBtn) {
-          const mapaBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.trim() === 'Mapa');
-          if (mapaBtn) mapaBtn.click();
-          huntBtn = document.querySelector('button.ml-linha[data-slug="' + targetSlug + '"]');
-        }
-        if (huntBtn) huntBtn.click();
-      }
+      const curarBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.includes('Curar'));
+      const isFora = fullText.includes('fora da caça') || ecoOnde.includes('Centro Pokemon') || fullText.includes('desmaiou') || !!curarBtn;
 
       return { fullText, hunt: ecoOnde || hunt, hudLog, isPaused, ballsCount, isFora };
     })()`,
@@ -202,7 +193,8 @@ async function queryAcc(session, isAcc1) {
     hunt,
     hudLog,
     isPaused,
-    ballsCount
+    ballsCount,
+    isFora: (val.isFora || hpCur === 0 || hunt.includes('Centro Pokemon'))
   };
 }
 
@@ -277,6 +269,25 @@ async function startStreamer() {
             if (targetSession) {
               targetSession.cdp.send('Page.reload').catch(() => {});
             }
+          }
+
+          // Auto-Heal & Roadmap Progression Watchdog se a equipe for derrotada
+          if (acc.isFora && !isRecovering[acc.port]) {
+            isRecovering[acc.port] = true;
+            console.log(`[Streamer Watchdog] Conta ${acc.nick} (Porta ${acc.port}) está fora de combate. Acionando Auto-Heal e Roadmap Progression...`);
+            const targetSession = acc.port === 9222 ? session1 : session2;
+            healAndProgressAccount(targetSession, { port: acc.port, mode: 'PROGRESSION', force: true })
+              .then(res => {
+                if (res && res.success) {
+                  console.log(`[Streamer Watchdog] Conta ${acc.port} recuperada com sucesso: ${res.targetName || res.targetSlug}`);
+                }
+              })
+              .catch(err => {
+                console.error(`[Streamer Watchdog] Erro ao recuperar Conta ${acc.port}:`, err.message);
+              })
+              .finally(() => {
+                setTimeout(() => { isRecovering[acc.port] = false; }, 3000);
+              });
           }
 
           lastState[acc.port] = {

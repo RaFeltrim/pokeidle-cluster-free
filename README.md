@@ -108,6 +108,7 @@ PokeIdle/
 │
 ├── 📁 src/                                    # Código-Fonte do Cluster e Automação
 │   ├── cluster_manager.js                     # Supervisor Watchdog Mestre (resiliência de portas e processos)
+│   ├── auto_heal_and_progression.js           # Motor Inteligente de Auto-Cura e Progressão Elemental de Mapas
 │   ├── webhook_hub.js                         # Servidor local de eventos HTTP push (Porta 4567)
 │   ├── streamer.js                            # Streamer persistente de telemetria CDP (WebSocket contínuo)
 │   ├── auto_catcher.js                        # Auto-Catcher Seletivo DOM (66 alvos + Shinies)
@@ -164,11 +165,17 @@ O motor de captura [`src/auto_catcher.js`](src/auto_catcher.js) atua diretamente
 * **Tier A (Alto Giro / Meta Inicial):** Geodude, Graveler, Golem, Eevee, Vaporeon, Jolteon, Flareon, Vulpix, Ninetales, Growlithe, Arcanine, Pikachu, Raichu, Pichu, Combee, Vespiquen, Machop, Machamp, Magikarp, Gyarados.
 * **✨ Detecção Universal de Shinies:** Prioridade máxima incondicional. Qualquer Pokémon com indicador visual ✨ é arremessado imediatamente a todo custo.
 
-### 🏥 Watchdog de Auto-Cura (Centro Pokémon)
-Caso as poções ou revives esgotem e o Pokémon seja derrotado, o Pokéidle transfere a conta para o Centro Pokémon e coloca a sessão no estado `fora da caça`. O [`src/streamer.js`](src/streamer.js) monitora esse evento em tempo real e reage autonomamente:
-1. Detecta o estado `fora da caça` e clica em **"Curar equipe"** (HP restaurado a 100%).
-2. Abre a interface de mapa e localiza a rota pré-configurada (`paras` para Conta 1, `geodude` para Conta 2).
-3. Clica na rota e reativa o combate sem qualquer dependência de ação humana.
+### 🏥 Motor Inteligente de Auto-Cura & Progressão Elemental de Mapas
+Caso as poções esgotem e o Pokémon seja derrotado, o Pokéidle transfere a conta para o Centro Pokémon e coloca a sessão no estado `fora da caça`. O motor autônomo [`src/auto_heal_and_progression.js`](src/auto_heal_and_progression.js), integrado de forma persistente no [`src/streamer.js`](src/streamer.js), executa a rotina inteligente em 5 etapas:
+1. **Detecção Imediata:** Monitora `fora da caça`, `Centro Pokemon`, HP 0 ou botão `Curar equipe`.
+2. **Auto-Cura Instantânea:** Clica em **"Curar equipe"**, restaurando 100% de HP da equipe.
+3. **Cálculo de Roadmap Elemental:** Avalia a espécie ativa e seu nível destravado para selecionar alvos com vantagens multiplicadoras de dano ($2\times$ e $4\times$ de fraqueza):
+   * **Tipo Fogo (Charmander Nv. 28+):** `Paras` (Nv 1 - Bug/Grass) ➔ `Bulbasaur` (Nv 20 - Grass/Poison) ➔ `Beedrill` (Nv 30) ➔ `Parasect` (Nv 50 - Fraqueza $4\times$) ➔ `Victreebel` (Nv 60) ➔ `Venusaur` (Nv 80) ➔ `Scyther` (Nv 100).
+   * **Tipo Planta / Veneno (Bulbasaur Nv. 28+):** `Geodude` (Nv 1 - Rock/Ground $4\times$) ➔ `Diglett` (Nv 10 - Ground $2\times$) ➔ `Rhyhorn` (Nv 30 - Ground/Rock $4\times$) ➔ `Graveler` (Nv 40) ➔ `Onix` (Nv 60) ➔ `Golem` (Nv 80) ➔ `Rhydon` (Nv 100).
+   * **Modo Alternativo (`STAY_CURRENT`):** Permite configurar a conta para sempre retornar à mesma área em que estava caçando.
+4. **Proteção Anti-Death Loop:** Se o Pokémon sofrer 2 derrotas consecutivas na mesma rota avançada em menos de 60 segundos, o algoritmo recua preventivamente uma rota segura para garantir farm ininterrupto.
+5. **Re-engajamento via Pointer Events:** Abre o modal de mapas e despacha a cadeia completa de eventos (`pointerdown`, `mousedown`, `pointerup`, `mouseup`, `click`) no botão da rota e no seu gatilho de ação (`.ml-ir, .ml-acao`).
+6. **Notificação Push em Tempo Real:** Dispara evento `AUTO_HEAL_AND_ADVANCE` para o Webhook Hub (porta 4567), atualizando o feed de eventos e a HUD Windows instantaneamente.
 
 ---
 

@@ -115,7 +115,7 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
                             <Image Name="ImgAcc1Poke" Grid.Column="0" Width="38" Height="38" Source="https://play.pokemonshowdown.com/sprites/gen5/charmander.png" RenderOptions.BitmapScalingMode="NearestNeighbor" VerticalAlignment="Center"/>
                             <StackPanel Grid.Column="1" Margin="6,0,0,0" VerticalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="👤 Submarino" FontWeight="Bold" FontSize="11" Foreground="#F87171"/>
+                                    <TextBlock Name="TxtAcc1Nick" Text="👤 Conta 1" FontWeight="Bold" FontSize="11" Foreground="#F87171"/>
                                     <TextBlock Name="TxtAcc1Trainer" Text=" · Nível --" FontSize="9" Foreground="#94A3B8" VerticalAlignment="Center"/>
                                 </StackPanel>
                                 <TextBlock Name="TxtAcc1Poke" Text="🔥 Charmander Nv. --" FontSize="10" Foreground="#F1F5F9" FontWeight="SemiBold" Margin="0,1,0,1"/>
@@ -139,7 +139,7 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
                             <Image Name="ImgAcc2Poke" Grid.Column="0" Width="38" Height="38" Source="https://play.pokemonshowdown.com/sprites/gen5/bulbasaur.png" RenderOptions.BitmapScalingMode="NearestNeighbor" VerticalAlignment="Center"/>
                             <StackPanel Grid.Column="1" Margin="6,0,0,0" VerticalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="👤 Submarino2" FontWeight="Bold" FontSize="11" Foreground="#4ADE80"/>
+                                    <TextBlock Name="TxtAcc2Nick" Text="👤 Conta 2" FontWeight="Bold" FontSize="11" Foreground="#4ADE80"/>
                                     <TextBlock Name="TxtAcc2Trainer" Text=" · Nível --" FontSize="9" Foreground="#94A3B8" VerticalAlignment="Center"/>
                                 </StackPanel>
                                 <TextBlock Name="TxtAcc2Poke" Text="🌿 Bulbasaur Nv. --" FontSize="10" Foreground="#F1F5F9" FontWeight="SemiBold" Margin="0,1,0,1"/>
@@ -186,7 +186,7 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
                         <Button Name="BtnBackToSummary" Background="#2038BDF8" BorderBrush="#6038BDF8" BorderThickness="1" Cursor="Hand" Padding="8,4" HorizontalAlignment="Left">
                             <TextBlock Text="‹ Voltar ao Cluster" FontSize="10" FontWeight="Bold" Foreground="#38BDF8"/>
                         </Button>
-                        <TextBlock Name="TxtDetailTitle" Text="Conta: Submarino" FontSize="11" FontWeight="Bold" Foreground="#F8FAFC" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock Name="TxtDetailTitle" Text="Detalhes da Conta" FontSize="11" FontWeight="Bold" Foreground="#F8FAFC" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                     </Grid>
 
                     <!-- Active Pokemon Big Card -->
@@ -362,6 +362,7 @@ $btnBackToSummary = $window.FindName("BtnBackToSummary")
 
 $txtTotalCoins = $window.FindName("TxtTotalCoins")
 $cardAcc1 = $window.FindName("CardAcc1")
+$txtAcc1Nick = $window.FindName("TxtAcc1Nick")
 $imgAcc1Poke = $window.FindName("ImgAcc1Poke")
 $txtAcc1Trainer = $window.FindName("TxtAcc1Trainer")
 $txtAcc1Poke = $window.FindName("TxtAcc1Poke")
@@ -369,6 +370,7 @@ $txtAcc1Hunt = $window.FindName("TxtAcc1Hunt")
 $txtAcc1Coins = $window.FindName("TxtAcc1Coins")
 
 $cardAcc2 = $window.FindName("CardAcc2")
+$txtAcc2Nick = $window.FindName("TxtAcc2Nick")
 $imgAcc2Poke = $window.FindName("ImgAcc2Poke")
 $txtAcc2Trainer = $window.FindName("TxtAcc2Trainer")
 $txtAcc2Poke = $window.FindName("TxtAcc2Poke")
@@ -802,6 +804,7 @@ function Refresh-RealTimeData {
             # 2. Account 1
             $acc1 = $script:latestAccounts | Where-Object { $_.port -eq 9222 }
             if ($acc1) {
+                if ($acc1.nick) { $txtAcc1Nick.Text = "👤 " + $acc1.nick }
                 $txtAcc1Trainer.Text = " · Nível " + $acc1.trainerLevel
                 $txtAcc1Poke.Text = "$emojiFire " + $acc1.species + " Nv. " + $acc1.pokeLevel + " (" + $acc1.hpCur + "/" + $acc1.hpMax + " HP)"
                 $txtAcc1Coins.Text = (Format-Coins $acc1.coins) + " $emojiCoin"
@@ -812,6 +815,7 @@ function Refresh-RealTimeData {
             # 3. Account 2
             $acc2 = $script:latestAccounts | Where-Object { $_.port -eq 9223 }
             if ($acc2) {
+                if ($acc2.nick) { $txtAcc2Nick.Text = "👤 " + $acc2.nick }
                 $txtAcc2Trainer.Text = " · Nível " + $acc2.trainerLevel
                 $txtAcc2Poke.Text = "$emojiHerb " + $acc2.species + " Nv. " + $acc2.pokeLevel + " (" + $acc2.hpCur + "/" + $acc2.hpMax + " HP)"
                 $txtAcc2Coins.Text = (Format-Coins $acc2.coins) + " $emojiCoin"

@@ -1,0 +1,1682 @@
+[
+  {
+    "tag": "BUTTON",
+    "text": "Recarregar agora",
+    "id": "aviso-versao-btn",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Entrar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Criar conta",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Logar",
+    "id": "entrar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Esqueci minha senha",
+    "id": "abrir-esqueci",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Enviar link",
+    "id": "esq-enviar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Voltar para o login",
+    "id": "esq-voltar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "Termos de Uso",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "Política de Privacidade",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Criar conta",
+    "id": "criar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Login com Discord",
+    "id": "btn-discord",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Login com Google",
+    "id": "btn-google",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Confirmar",
+    "id": "confirma-ok",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Reenviar código",
+    "id": "confirma-reenviar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Voltar para o login",
+    "id": "confirma-voltar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Confirmar nome",
+    "id": "nick-salvar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "Termos, Privacidade e Direitos",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Indique & Ganhe",
+    "id": "btn-afiliados",
+    "title": "Indique & ganhe — convide amigos",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Boost Guild +10% XP 3d",
+    "id": "",
+    "title": "+10% de XP do treinador e do pokemon para a guild inteira, até 12/11, 17:01. Bancado por: YODASL (500). Clique para abrir o banco.",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Twitch ao vivo assista",
+    "id": "",
+    "title": "Ao vivo agora na Twitch: Rodil, ClovaoBengala, DenisSniderTV, FaturetoSL, Surskity11. Assista na página do canal e troque os pontos do canal por horas de +15%. Clique para ver.",
+    "ariaLabel": "Twitch ao vivo — Ao vivo agora na Twitch: Rodil, ClovaoBengala, DenisSniderTV, FaturetoSL, Surskity11. Assista na página do canal e troque os pontos do canal por horas de +15%. Clique para ver."
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Kick ao vivo assista",
+    "id": "",
+    "title": "Ao vivo agora na Kick: yetz, PatoPapao2, Rodil, clovaobengalalol, Biscoitao, Guaxilol1, FaturetoSL, surskity, DenisSnider, Revolta, fNblol. Assista e troque os pontos do canal por horas de +15%. Clique para ver.",
+    "ariaLabel": "Kick ao vivo — Ao vivo agora na Kick: yetz, PatoPapao2, Rodil, clovaobengalalol, Biscoitao, Guaxilol1, FaturetoSL, surskity, DenisSnider, Revolta, fNblol. Assista e troque os pontos do canal por horas de +15%. Clique para ver."
+  },
+  {
+    "tag": "BUTTON",
+    "text": "? Não classificado",
+    "id": "tr-rank-box",
+    "title": "Seu rank no PvP ranqueado",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Evoluir",
+    "id": "btn-evoluir",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mega Evoluir",
+    "id": "btn-mega",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "i",
+    "id": "",
+    "title": "Ver ficha",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Pokedex",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mapa",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Market",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Passe",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ranks",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Boss",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mini Games",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "PvP",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ginásio",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Torneio",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Casa",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "RMT",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Shop",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Wiki",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Paras · nível 1",
+    "id": "eco-onde",
+    "title": "Abrir a ficha de Paras na Pokedex",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ir para o Centro Pokemon Centro Pokemon",
+    "id": "eco-ir-centro",
+    "title": "Ir para o Centro Pokemon",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Desistir do Combate Desistir",
+    "id": "eco-desistir",
+    "title": "Desistir do Combate",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Abandonar arena",
+    "id": "eco-abandonar",
+    "title": "A entrada paga não é devolvida",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Curar equipe",
+    "id": "eco-curar",
+    "title": "Curar equipe",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ligar a cena",
+    "id": "eco-sair",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "pvp-fila-cancelar",
+    "title": "Cancelar busca",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "⤢",
+    "id": "pvp-mini-abrir",
+    "title": "Abrir em tela cheia",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "pvp-mini-fechar",
+    "title": "Fechar",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "pvp-tick-fechar",
+    "title": "Fechar",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Recentes",
+    "id": "",
+    "title": "As mais novas primeiro — clique de novo para inverter",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Nota",
+    "id": "",
+    "title": "Maior Nota Calculadora",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "IV",
+    "id": "",
+    "title": "Maior IV Total",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Potência",
+    "id": "",
+    "title": "Potência",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Qualidade",
+    "id": "",
+    "title": "Qualidade",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Nível",
+    "id": "",
+    "title": "Nível",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Total",
+    "id": "",
+    "title": "Maior IV Total",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "HP",
+    "id": "",
+    "title": "IV HP",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "ATK",
+    "id": "",
+    "title": "IV ATK",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "DEF",
+    "id": "",
+    "title": "IV DEF",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "SP.ATK",
+    "id": "",
+    "title": "IV SP.ATK",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "SP.DEF",
+    "id": "",
+    "title": "IV SP.DEF",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "SPD",
+    "id": "",
+    "title": "IV SPD",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Paras Nv1",
+    "id": "",
+    "title": "arremessar bola neste",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Abandonar arena",
+    "id": "boss-sair",
+    "title": "A entrada paga não é devolvida",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "0",
+    "id": "escape-rope",
+    "title": "Sem Escape Rope. Compre na Loja por 1 💎.",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ir para o Centro Pokemon 1.2s",
+    "id": "ir-centro",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Desistir do Combate",
+    "id": "desistir-combate",
+    "title": "Desistir do Combate",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Curar equipe",
+    "id": "centro-curar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Professor Carvalho",
+    "id": "centro-tm",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Depot",
+    "id": "centro-depot",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Sala",
+    "id": "centro-sala-btn",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Sair de casa",
+    "id": "casa-sair",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "3/5",
+    "id": "btn-auto-toggle",
+    "title": "Recolher automações — o chat ocupa o espaço",
+    "ariaLabel": "Recolher automações — o chat ocupa o espaço"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "100",
+    "id": "",
+    "title": "Poke Ball — eficiência ×1",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "0",
+    "id": "",
+    "title": "Great Ball — eficiência ×2",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "20",
+    "id": "",
+    "title": "Revive",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "🌎 Mundo",
+    "id": "",
+    "title": "Conversa geral com todo mundo",
+    "ariaLabel": "Mundo"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "💰 Comércio 2",
+    "id": "",
+    "title": "Compra, venda e anúncios do Market",
+    "ariaLabel": "Comércio: 2 novas"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "❓ Dúvidas 5",
+    "id": "",
+    "title": "Perguntas sobre o jogo",
+    "ariaLabel": "Dúvidas: 5 novas"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "⚔️ Guild 50",
+    "id": "",
+    "title": "Só a sua guild",
+    "ariaLabel": "Guild: 50 novas"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "chat-ignorados-btn",
+    "title": "Jogadores ignorados",
+    "ariaLabel": "Jogadores ignorados"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "50",
+    "id": "btn-chat-toggle",
+    "title": "Recolher chat",
+    "ariaLabel": "Recolher chat"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Squirtle",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charmander",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Exeggcute",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ivysaur",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Venusaur",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Bulbasaur",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charizard",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Treecko",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Pichu",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mudkip",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Rhyperior",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Gengar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Combee",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Chimchar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Tyranitar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mega Tyranitar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Electivire",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Larvitar",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charmeleon",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Vileplume",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Blastoise",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Gible",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Silcoon",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "chat-mod-fechar",
+    "title": "Fechar",
+    "ariaLabel": "Fechar"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Responder",
+    "id": "chat-responder",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mutar",
+    "id": "chat-mod-mute",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ignorar",
+    "id": "chat-ignorar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ver perfil",
+    "id": "chat-ver-perfil",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Adicionar amigo",
+    "id": "chat-adicionar-amigo",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Fixar mensagem",
+    "id": "chat-mod-fixar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Excluir mensagem",
+    "id": "chat-mod-excluir",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "5 minutos",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "30 minutos",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "1 hora",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "24 horas",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Voltar",
+    "id": "chat-mod-mute-voltar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "chat-opcoes-fechar",
+    "title": "",
+    "ariaLabel": "Fechar"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "😊",
+    "id": "chat-emoji",
+    "title": "Emojis",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "▶",
+    "id": "chat-enviar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "‹",
+    "id": "modal-voltar",
+    "title": "Voltar para Bônus Twitch",
+    "ariaLabel": "Voltar para Bônus Twitch"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "modal-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "KantoNv 1",
+    "id": "",
+    "title": "1 de 146 áreas com a espécie já na sua Pokedex",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "OutlandNv 150",
+    "id": "",
+    "title": "precisa de nível 150 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "JohtoNv 200",
+    "id": "",
+    "title": "precisa de nível 200 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "HoennNv 500",
+    "id": "",
+    "title": "precisa de nível 500 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "SinnohNv 1.000",
+    "id": "",
+    "title": "precisa de nível 1.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "UnovaNv 5.000",
+    "id": "",
+    "title": "precisa de nível 5.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "KalosNv 10.000",
+    "id": "",
+    "title": "precisa de nível 10.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "AlolaNv 25.000",
+    "id": "",
+    "title": "precisa de nível 25.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "GalarNv 40.000",
+    "id": "",
+    "title": "precisa de nível 40.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "PaldeaNv 75.000",
+    "id": "",
+    "title": "precisa de nível 75.000 para caçar — dá para explorar no mapa",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "todos os tipos",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "NORMAL",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "FIRE",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "WATER",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "GRASS",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "ELECTRIC",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "ICE",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "FIGHTING",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "POISON",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "GROUND",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "FLYING",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "PSYCHIC",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "BUG",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "ROCK",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "GHOST",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "DRAGON",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "DARK",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "STEEL",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "FAIRY",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Do tipo",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Fraco contra",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Forte contra",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Todos",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Capturados",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Não capturados",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Top Catch: não capturados na semana",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Lista",
+    "id": "",
+    "title": "As áreas numa lista, em ordem de nível — mais fácil de achar e de clicar, sem esperar o mapa carregar",
+    "ariaLabel": "Lista"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Pokemon",
+    "id": "",
+    "title": "Ordenar por Pokemon — clique de novo para inverter",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Tipo",
+    "id": "",
+    "title": "Ordenar por Tipo — clique de novo para inverter",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "ha-fechar",
+    "title": "Fechar",
+    "ariaLabel": "Fechar"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "perfil-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "guild-detalhe-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "gin-time-detalhe-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "‹",
+    "id": "ficha-voltar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "ficha-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charmander #4",
+    "id": "",
+    "title": "Ver a ficha de Charmander",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charizard Nv 80",
+    "id": "",
+    "title": "Ver a ficha de Charizard",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Charmeleon Nv 40",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "calc-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "acoin-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "refino-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "vitrine-editor-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Salvar vitrine",
+    "id": "vte-salvar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "gwr-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "?",
+    "id": "gwr-tab-ajuda",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "gwr-busca-limpar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "rgx-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "raid-time-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "gwa-fechar",
+    "title": "",
+    "ariaLabel": "×"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Continuar",
+    "id": "boss-loot-ok",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "i",
+    "id": "tm-info-bt",
+    "title": "Como funcionam o Z-Move e o TM AoE",
+    "ariaLabel": "Como funcionam o Z-Move e o TM AoE"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "tm-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Trocar",
+    "id": "",
+    "title": "Trocar peças",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Aplicar",
+    "id": "",
+    "title": "Aplicar disco",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Bike",
+    "id": "",
+    "title": "Fabricar Bicicleta",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Shiny",
+    "id": "",
+    "title": "Fabricar Shiny Stone",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mega",
+    "id": "",
+    "title": "Fabricar Mega Stone",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ovo",
+    "id": "",
+    "title": "Fabricar Ovo Shiny",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Disco AoE",
+    "id": "tm-trocar-aoe",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "tm-info-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "salas-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "?",
+    "id": "salas-ajuda",
+    "title": "",
+    "ariaLabel": "Como funcionam as salas"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "?",
+    "id": "depot-ajuda",
+    "title": "Entenda o limite de pokemon",
+    "ariaLabel": "Entenda o limite de pokemon"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "depot-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Depot",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Coleção",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Cancelar",
+    "id": "confirmar-nao",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Confirmar",
+    "id": "confirmar-sim",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Jogar aqui",
+    "id": "sessao-tomada-jogar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Recusar",
+    "id": "termos-aceite-recusar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Aceitar",
+    "id": "termos-aceite-aceitar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "←",
+    "id": "guild-voltar",
+    "title": "Voltar",
+    "ariaLabel": "Voltar"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "guild-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "10/10 no time",
+    "id": "gld-stat-time",
+    "title": "Time da Guild",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Minha equipe",
+    "id": "guild-editar-time",
+    "title": "Minha equipe de guerra",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Banco",
+    "id": "gld-boost-bt",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Membros",
+    "id": "",
+    "title": "Membros",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Boost",
+    "id": "",
+    "title": "Boost",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Guerra",
+    "id": "",
+    "title": "Guerra",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Convites",
+    "id": "",
+    "title": "Convites",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Quadro",
+    "id": "",
+    "title": "Quadro",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Guild",
+    "id": "",
+    "title": "Guild",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Padrão",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "⚔ Maior poder",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Maior nível",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Online primeiro",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Mais tempo offline",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Ver perfil",
+    "id": "",
+    "title": "Ver perfil",
+    "ariaLabel": "Ver perfil — YURUSENAI"
+  },
+  {
+    "tag": "BUTTON",
+    "text": "‹",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "›",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "guild-time-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "guild-escalacao-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "guild-doacoes-fechar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "Discord",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "SEGUIR NO INSTAGRAM",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "SEGUIR NO X",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "A",
+    "text": "ABRIR TICKET NO DISCORD",
+    "id": "",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "‹",
+    "id": "aviso-mais-antiga",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "›",
+    "id": "aviso-mais-nova",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Bora pedalar!",
+    "id": "aviso-jogo-ok",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "×",
+    "id": "discord-popup-fechar",
+    "title": "",
+    "ariaLabel": "Fechar"
+  },
+  {
+    "tag": "A",
+    "text": "Entrar no Discord",
+    "id": "discord-popup-cta",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "✓Já estou dentro!",
+    "id": "discord-popup-dispensar",
+    "title": "Não mostrar este convite de novo",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Pular guia",
+    "id": "tutorial-pular",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Voltar",
+    "id": "tutorial-voltar",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "Próximo",
+    "id": "tutorial-proximo",
+    "title": "",
+    "ariaLabel": ""
+  },
+  {
+    "tag": "BUTTON",
+    "text": "!",
+    "id": "btn-novidades",
+    "title": "Novidades no PokeIdle",
+    "ariaLabel": "Novidades no PokeIdle"
+  }
+]

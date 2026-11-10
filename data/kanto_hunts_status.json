@@ -1,0 +1,588 @@
+{
+  "hunts": [
+    {
+      "text": "Bellsprout | Nv 1 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Caterpie | Nv 1 | BUG | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Geodude | Nv 1 | ROCK | GROUND | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Magikarp | Nv 1 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Oddish | Nv 1 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Paras | Nv 1 | BUG | GRASS | CAÇANDO | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Pidgey | Nv 1 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Poliwag | Nv 1 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Rattata | Nv 1 | NORMAL | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Weedle | Nv 1 | BUG | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Abra | Nv 10 | PSYCHIC | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Diglett | Nv 10 | GROUND | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Doduo | Nv 10 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Ekans | Nv 10 | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Exeggcute | Nv 10 | GRASS | PSYCHIC | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Goldeen | Nv 10 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Grimer | Nv 10 | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Horsea | Nv 10 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Kakuna | Nv 10 | BUG | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Koffing | Nv 10 | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Krabby | Nv 10 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Magnemite | Nv 10 | ELECTRIC | STEEL | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Mankey | Nv 10 | FIGHTING | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Metapod | Nv 10 | BUG | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Nidoranfe | Nv 10 | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Nidoranma | Nv 10 | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Shellder | Nv 10 | WATER | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Slowpoke | Nv 10 | WATER | PSYCHIC | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Spearow | Nv 10 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Tentacool | Nv 10 | WATER | POISON | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Voltorb | Nv 10 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Zubat | Nv 10 | POISON | FLYING | CAÇAR | ▸",
+      "unlocked": true
+    },
+    {
+      "text": "Bulbasaur | Nv 20 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Charmander | Nv 20 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Cubone | Nv 20 | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Gastly | Nv 20 | GHOST | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Kabuto | Nv 20 | ROCK | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Machop | Nv 20 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Meowth | Nv 20 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Omanyte | Nv 20 | ROCK | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Pidgeotto | Nv 20 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Ponyta | Nv 20 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Porygon | Nv 20 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Psyduck | Nv 20 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Sandshrew | Nv 20 | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Seel | Nv 20 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Squirtle | Nv 20 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Staryu | Nv 20 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Venonat | Nv 20 | BUG | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Vulpix | Nv 20 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Beedrill | Nv 30 | BUG | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Butterfree | Nv 30 | BUG | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dratini | Nv 30 | DRAGON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Drowzee | Nv 30 | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Gloom | Nv 30 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Growlithe | Nv 30 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Nidorina | Nv 30 | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Nidorino | Nv 30 | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Poliwhirl | Nv 30 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Primeape | Nv 30 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Raticate | Nv 30 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Rhyhorn | Nv 30 | GROUND | ROCK | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Weepinbell | Nv 30 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Arbok | Nv 40 | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Charmeleon | Nv 40 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Clefairy | Nv 40 | FAIRY | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dugtrio | Nv 40 | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Eevee | Nv 40 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Electrode | Nv 40 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Golbat | Nv 40 | POISON | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Graveler | Nv 40 | ROCK | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Ivysaur | Nv 40 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Jigglypuff | Nv 40 | NORMAL | FAIRY | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Machoke | Nv 40 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Wartortle | Nv 40 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Ditto | Nv 50 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Farfetch'D | Nv 50 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Fearow | Nv 50 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Haunter | Nv 50 | GHOST | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Kadabra | Nv 50 | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Marowak | Nv 50 | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Parasect | Nv 50 | BUG | GRASS | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Persian | Nv 50 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Seadra | Nv 50 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Seaking | Nv 50 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Tangela | Nv 50 | GRASS | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Chansey | Nv 60 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Cloyster | Nv 60 | WATER | ICE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dewgong | Nv 60 | WATER | ICE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dodrio | Nv 60 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Hitmonchan | Nv 60 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Hitmonlee | Nv 60 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Hypno | Nv 60 | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Kingler | Nv 60 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Lickitung | Nv 60 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Onix | Nv 60 | ROCK | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Pikachu | Nv 60 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Sandslash | Nv 60 | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Slowbro | Nv 60 | WATER | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Tauros | Nv 60 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Venomoth | Nv 60 | BUG | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Victreebel | Nv 60 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Weezing | Nv 60 | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Rapidash | Nv 70 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Vileplume | Nv 70 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Blastoise | Nv 80 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Charizard | Nv 80 | FIRE | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Clefable | Nv 80 | FAIRY | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dragonair | Nv 80 | DRAGON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Flareon | Nv 80 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Golduck | Nv 80 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Golem | Nv 80 | ROCK | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Jolteon | Nv 80 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Kabutops | Nv 80 | ROCK | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Kangaskhan | Nv 80 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Machamp | Nv 80 | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Magneton | Nv 80 | ELECTRIC | STEEL | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Mr. Mime | Nv 80 | PSYCHIC | FAIRY | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Muk | Nv 80 | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Nidoking | Nv 80 | POISON | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Nidoqueen | Nv 80 | POISON | GROUND | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Omastar | Nv 80 | ROCK | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Pidgeot | Nv 80 | NORMAL | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Poliwrath | Nv 80 | WATER | FIGHTING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Raichu | Nv 80 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Starmie | Nv 80 | WATER | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Tentacruel | Nv 80 | WATER | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Vaporeon | Nv 80 | WATER | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Venusaur | Nv 80 | GRASS | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Wigglytuff | Nv 80 | NORMAL | FAIRY | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Aerodactyl | Nv 100 | ROCK | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Alakazam | Nv 100 | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Arcanine | Nv 100 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Dragonite | Nv 100 | DRAGON | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Electabuzz | Nv 100 | ELECTRIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Exeggutor | Nv 100 | GRASS | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Gengar | Nv 100 | GHOST | POISON | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Gyarados | Nv 100 | WATER | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Jynx | Nv 100 | ICE | PSYCHIC | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Lapras | Nv 100 | WATER | ICE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Magmar | Nv 100 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Ninetales | Nv 100 | FIRE | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Pinsir | Nv 100 | BUG | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Rhydon | Nv 100 | GROUND | ROCK | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Scyther | Nv 100 | BUG | FLYING | CAÇAR | ▸",
+      "unlocked": false
+    },
+    {
+      "text": "Snorlax | Nv 100 | NORMAL | CAÇAR | ▸",
+      "unlocked": false
+    }
+  ]
+}

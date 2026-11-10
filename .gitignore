@@ -1,0 +1,8 @@
+node_modules/
+scratch/
+*.log
+data/*.log
+data/capture_history_port_*.json
+.vscode/
+.idea/
+*.tmp

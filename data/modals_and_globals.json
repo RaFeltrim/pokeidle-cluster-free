@@ -1,0 +1,666 @@
+{
+  "modals": [
+    {
+      "id": "p-treinador",
+      "className": "painel treinador",
+      "title": ""
+    },
+    {
+      "id": "p-ativo",
+      "className": "painel",
+      "title": "EM CAMPO"
+    },
+    {
+      "id": "",
+      "className": "painel-cab",
+      "title": "EM CAMPO"
+    },
+    {
+      "id": "p-equipe",
+      "className": "painel",
+      "title": "EQUIPE\n1/5"
+    },
+    {
+      "id": "",
+      "className": "painel-cab painel-cab-equipe",
+      "title": "EQUIPE\n1/5"
+    },
+    {
+      "id": "btn-equipe-toggle",
+      "className": "btn-painel-toggle",
+      "title": ""
+    },
+    {
+      "id": "time-corpo",
+      "className": "painel-corpo-equipe",
+      "title": ""
+    },
+    {
+      "id": "eco-painel",
+      "className": "eco-painel",
+      "title": ""
+    },
+    {
+      "id": "golpes-painel",
+      "className": "golpes-painel",
+      "title": ""
+    },
+    {
+      "id": "sessao-painel",
+      "className": "sessao-painel hidden",
+      "title": ""
+    },
+    {
+      "id": "capturas-painel",
+      "className": "capturas-painel",
+      "title": "CAPTURAS"
+    },
+    {
+      "id": "p-auto",
+      "className": "painel",
+      "title": "AUTOMAÇÕES"
+    },
+    {
+      "id": "",
+      "className": "painel-cab painel-cab-auto",
+      "title": "AUTOMAÇÕES"
+    },
+    {
+      "id": "btn-auto-toggle",
+      "className": "btn-painel-toggle",
+      "title": ""
+    },
+    {
+      "id": "auto-cnt-rail",
+      "className": "painel-ico-selo",
+      "title": ""
+    },
+    {
+      "id": "auto-corpo",
+      "className": "painel-corpo-auto",
+      "title": ""
+    },
+    {
+      "id": "p-chat",
+      "className": "painel chat cresce",
+      "title": ""
+    },
+    {
+      "id": "chat-cnt-rail",
+      "className": "painel-ico-selo selo-novas",
+      "title": ""
+    },
+    {
+      "id": "onboarding",
+      "className": "modal hidden",
+      "title": ""
+    },
+    {
+      "id": "ob-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "starter",
+      "className": "modal hidden",
+      "title": "Escolha o seu primeiro pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa starter-caixa",
+      "title": "Escolha o seu primeiro pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Escolha o seu primeiro pokemon"
+    },
+    {
+      "id": "modal",
+      "className": "modal hidden",
+      "title": "Mapa"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa",
+      "title": "Mapa"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Mapa"
+    },
+    {
+      "id": "modal-titulo",
+      "className": "",
+      "title": ""
+    },
+    {
+      "id": "modal-aviso",
+      "className": "modal-aviso hidden",
+      "title": ""
+    },
+    {
+      "id": "modal-extra",
+      "className": "modal-extra hidden",
+      "title": ""
+    },
+    {
+      "id": "modal-extra-b",
+      "className": "modal-extra hidden",
+      "title": ""
+    },
+    {
+      "id": "modal-voltar",
+      "className": "modal-extra modal-extra-ico modal-extra-voltar hidden",
+      "title": ""
+    },
+    {
+      "id": "modal-fechar",
+      "className": "",
+      "title": ""
+    },
+    {
+      "id": "modal-corpo",
+      "className": "modal-corpo",
+      "title": "Hunt Analyser"
+    },
+    {
+      "id": "perfil",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "perfil-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "guild-detalhe",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "guild-detalhe-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "gin-time-detalhe",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "gin-time-detalhe-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "ficha",
+      "className": "modal modal-acima hidden",
+      "title": "Charmeleon"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-ficha",
+      "title": "Charmeleon"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Charmeleon"
+    },
+    {
+      "id": "",
+      "className": "modal-topo-esq ficha-topo-esq",
+      "title": "Charmeleon"
+    },
+    {
+      "id": "ficha-menu",
+      "className": "modal-extra modal-extra-ico ficha-menu-bt hidden",
+      "title": ""
+    },
+    {
+      "id": "ficha-voltar",
+      "className": "modal-extra modal-extra-ico modal-extra-voltar hidden",
+      "title": ""
+    },
+    {
+      "id": "ficha-corpo",
+      "className": "modal-corpo",
+      "title": "Evolução"
+    },
+    {
+      "id": "calc",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "calc-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "amigo-coins",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "acoin-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "refino",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "refino-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "vitrine-editor",
+      "className": "modal modal-acima hidden",
+      "title": "Montar vitrine"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-vitrine-editor",
+      "title": "Montar vitrine"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Montar vitrine"
+    },
+    {
+      "id": "",
+      "className": "modal-topo-esq",
+      "title": "Montar vitrine"
+    },
+    {
+      "id": "gwr",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "gwr-tab-ajuda",
+      "className": "cfg-ajuda gwr-tab-ajuda hidden",
+      "title": ""
+    },
+    {
+      "id": "gwr-tab-legenda",
+      "className": "gwr-tab-legenda hidden",
+      "title": ""
+    },
+    {
+      "id": "rgx",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "raid-time-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Equipe da Raid"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-guild-time",
+      "title": "Equipe da Raid"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Equipe da Raid"
+    },
+    {
+      "id": "raid-time-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "gwa",
+      "className": "modal modal-acima hidden",
+      "title": ""
+    },
+    {
+      "id": "gwa-corpo",
+      "className": "modal-corpo gwa-corpo",
+      "title": ""
+    },
+    {
+      "id": "boss-loot",
+      "className": "modal modal-acima hidden",
+      "title": "Boss derrotado!"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-boss-loot",
+      "title": "Boss derrotado!"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Boss derrotado!"
+    },
+    {
+      "id": "tm-researcher",
+      "className": "modal modal-acima",
+      "title": "PROFESSOR CARVALHO"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-tm",
+      "title": "PROFESSOR CARVALHO"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "PROFESSOR CARVALHO"
+    },
+    {
+      "id": "",
+      "className": "modal-topo-esq",
+      "title": "PROFESSOR CARVALHO"
+    },
+    {
+      "id": "tm-info",
+      "className": "modal modal-acima hidden",
+      "title": "Guia do Z-Move e do TM AoE"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-tm-info",
+      "title": "Guia do Z-Move e do TM AoE"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Guia do Z-Move e do TM AoE"
+    },
+    {
+      "id": "tm-info-corpo",
+      "className": "modal-corpo tm-info-corpo",
+      "title": ""
+    },
+    {
+      "id": "centro-salas-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Salas do Centro Pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-salas",
+      "title": "Salas do Centro Pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Salas do Centro Pokemon"
+    },
+    {
+      "id": "centro-depot-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Depot"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-depot",
+      "title": "Depot"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Depot"
+    },
+    {
+      "id": "depot-ajuda",
+      "className": "modal-extra modal-extra-ajuda hidden",
+      "title": ""
+    },
+    {
+      "id": "",
+      "className": "modal-corpo",
+      "title": "Equipe"
+    },
+    {
+      "id": "confirmar",
+      "className": "modal modal-acima hidden",
+      "title": "Evoluir pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-confirmar",
+      "title": "Evoluir pokemon"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Evoluir pokemon"
+    },
+    {
+      "id": "sessao-tomada",
+      "className": "modal hidden",
+      "title": "Conta aberta em outro lugar"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-confirmar",
+      "title": "Conta aberta em outro lugar"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Conta aberta em outro lugar"
+    },
+    {
+      "id": "alerta-conta",
+      "className": "modal hidden",
+      "title": ""
+    },
+    {
+      "id": "termos-aceite",
+      "className": "modal hidden",
+      "title": "Atualizamos nossos Termos"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-confirmar termos-caixa",
+      "title": "Atualizamos nossos Termos"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Atualizamos nossos Termos"
+    },
+    {
+      "id": "guild",
+      "className": "modal modal-acima hidden",
+      "title": "Guild"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-guild",
+      "title": "Guild"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Guild"
+    },
+    {
+      "id": "",
+      "className": "modal-topo-esq",
+      "title": "Guild"
+    },
+    {
+      "id": "guild-corpo",
+      "className": "modal-corpo",
+      "title": "FON YODISMO"
+    },
+    {
+      "id": "guild-time-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Minha equipe de guerra"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-guild-time",
+      "title": "Minha equipe de guerra"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Minha equipe de guerra"
+    },
+    {
+      "id": "guild-time-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "guild-escalacao-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Time da Guild"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-guild-escalacao",
+      "title": "Time da Guild"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Time da Guild"
+    },
+    {
+      "id": "guild-escalacao-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "guild-doacoes-modal",
+      "className": "modal modal-acima hidden",
+      "title": "Doações da guild"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-guild-doacoes",
+      "title": "Doações da guild"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Doações da guild"
+    },
+    {
+      "id": "guild-doacoes-corpo",
+      "className": "modal-corpo",
+      "title": ""
+    },
+    {
+      "id": "aviso-jogo",
+      "className": "modal modal-acima hidden",
+      "title": "Novidades no PokeIdle"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-aviso-jogo",
+      "title": "Novidades no PokeIdle"
+    },
+    {
+      "id": "",
+      "className": "modal-topo",
+      "title": "Novidades no PokeIdle"
+    },
+    {
+      "id": "",
+      "className": "modal-topo-esq",
+      "title": "Novidades no PokeIdle"
+    },
+    {
+      "id": "",
+      "className": "modal-corpo aviso-jogo-corpo",
+      "title": "VINCULE SUAS CONTAS"
+    },
+    {
+      "id": "discord-popup",
+      "className": "modal modal-acima hidden",
+      "title": "Entre na comunidade!"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa caixa-discord-popup",
+      "title": "Entre na comunidade!"
+    },
+    {
+      "id": "",
+      "className": "modal-corpo discord-popup-corpo",
+      "title": "Entre na comunidade!"
+    },
+    {
+      "id": "",
+      "className": "modal-caixa shiny-anuncio-caixa abre-ficha",
+      "title": "LoboQ capturou um Shiny Silcoon!"
+    },
+    {
+      "id": "tutorial-caixa",
+      "className": "tutorial-caixa modal-caixa",
+      "title": ""
+    }
+  ],
+  "windowKeys": [
+    "name",
+    "customElements",
+    "history",
+    "navigation",
+    "locationbar",
+    "menubar",
+    "personalbar",
+    "scrollbars",
+    "statusbar",
+    "toolbar",
+    "status",
+    "closed",
+    "frames",
+    "length",
+    "opener",
+    "parent",
+    "frameElement",
+    "navigator",
+    "origin",
+    "external",
+    "screen",
+    "innerWidth",
+    "innerHeight",
+    "scrollX",
+    "pageXOffset",
+    "scrollY",
+    "pageYOffset",
+    "visualViewport",
+    "screenX",
+    "screenY",
+    "outerWidth",
+    "outerHeight",
+    "devicePixelRatio",
+    "event",
+    "clientInformation",
+    "screenLeft",
+    "screenTop",
+    "styleMedia",
+    "isSecureContext",
+    "crossOriginIsolated",
+    "scheduler",
+    "performance",
+    "trustedTypes",
+    "crypto",
+    "indexedDB",
+    "localStorage",
+    "sessionStorage",
+    "alert",
+    "atob",
+    "blur"
+  ]
+}

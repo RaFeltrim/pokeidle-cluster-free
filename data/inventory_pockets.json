@@ -1,0 +1,72 @@
+{
+  "rawText": "MOCHILA\n×\nMochila\nEscolha um bolso para abrir.\nTreinador\nPokebolas, poções, revives e a Escape Rope\n220 itens\nItens Raros\nFragmentos, tickets, Boss Token, Z-Moves, casas e bicicletas\nVazio\nPedras\nEvoluem e refinam — cada pokemon solta as do tipo dele\n1 itens\nSkins\nVisuais para vestir nos seus pokemon\nVazio\nOferenda\nTroque pokemon do depot por uma pedra de evolução\nOficina\nChocadeira\nChoque Mystery Eggs e ganhe um pokemon surpresa\n0/1 chocando\nColeção\nOs pokemon que você separou para não vender\n0 pokemon\nSacrifício\nTroque pokemon de nota 3,5+ por um boost de XP\nVazio\nBanco\nTransferência de Coins: mande para qualquer treinador pelo nick\n276.781 Coins",
+  "pockets": [
+    {
+      "title": "Treinador",
+      "desc": ""
+    },
+    {
+      "title": "Treinador",
+      "desc": ""
+    },
+    {
+      "title": "Treinador"
+    },
+    {
+      "title": "Itens Raros",
+      "desc": ""
+    },
+    {
+      "title": "Itens Raros"
+    },
+    {
+      "title": "Pedras",
+      "desc": ""
+    },
+    {
+      "title": "Pedras"
+    },
+    {
+      "title": "Skins",
+      "desc": ""
+    },
+    {
+      "title": "Skins"
+    },
+    {
+      "title": "Oferenda",
+      "desc": ""
+    },
+    {
+      "title": "Oferenda"
+    },
+    {
+      "title": "Chocadeira",
+      "desc": ""
+    },
+    {
+      "title": "Chocadeira"
+    },
+    {
+      "title": "Coleção",
+      "desc": ""
+    },
+    {
+      "title": "Coleção"
+    },
+    {
+      "title": "Sacrifício",
+      "desc": ""
+    },
+    {
+      "title": "Sacrifício"
+    },
+    {
+      "title": "Banco",
+      "desc": ""
+    },
+    {
+      "title": "Banco"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "timeoutSeconds": -1,
+      "tools": {
+        "evaluate_script": {
+          "eager": true,
+          "background": "off"
+        }
+      }
+    }
+  }
+}
+

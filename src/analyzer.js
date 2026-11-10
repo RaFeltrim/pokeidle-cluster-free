@@ -110,23 +110,26 @@ async function inspectAcc1() {
   const fullText = raw.result.value.fullText;
   const trainerMatch = fullText.match(/(Submarino)\s+Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
   const pokeMatch = fullText.match(/(Charmander|Charmeleon|Charizard)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
+  const ballsMatch = fullText.match(/você tem\s*(\d+)/i);
+  const ballsCount = ballsMatch ? parseInt(ballsMatch[1], 10) : 100;
 
   return {
     nick: 'Submarino',
     port: 9222,
-    trainerLevel: trainerMatch ? parseInt(trainerMatch[2], 10) : 15,
+    trainerLevel: trainerMatch ? parseInt(trainerMatch[2], 10) : 19,
     trainerXpCur: trainerMatch ? parseNumber(trainerMatch[3]) : 0,
     trainerXpMax: trainerMatch ? parseNumber(trainerMatch[4]) : 0,
     coins: trainerMatch ? parseNumber(trainerMatch[5]) : 0,
     species: pokeMatch ? pokeMatch[1] : 'Charmander',
-    pokeLevel: pokeMatch ? parseInt(pokeMatch[2], 10) : 15,
-    power: pokeMatch ? parseInt(pokeMatch[3], 10) : 44,
-    hpCur: pokeMatch ? parseInt(pokeMatch[8], 10) : 276,
-    hpMax: pokeMatch ? parseInt(pokeMatch[9], 10) : 276,
+    pokeLevel: pokeMatch ? parseInt(pokeMatch[2], 10) : 19,
+    power: pokeMatch ? parseInt(pokeMatch[3], 10) : 55,
+    hpCur: pokeMatch ? parseInt(pokeMatch[8], 10) : 348,
+    hpMax: pokeMatch ? parseInt(pokeMatch[9], 10) : 348,
     pokeXpCur: pokeMatch ? parseNumber(pokeMatch[10]) : 0,
     pokeXpMax: pokeMatch ? parseNumber(pokeMatch[11]) : 0,
     hunt: raw.result.value.hunt,
-    isEco: raw.result.value.isEco
+    isEco: raw.result.value.isEco,
+    ballsCount
   };
 }
 
@@ -163,23 +166,26 @@ async function inspectAcc2() {
   const fullText = raw.result.value.fullText;
   const trainerMatch = fullText.match(/(Submarino2)\s+Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
   const pokeMatch = fullText.match(/(Bulbasaur|Ivysaur|Venusaur)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
+  const ballsMatch = fullText.match(/você tem\s*(\d+)/i);
+  const ballsCount = ballsMatch ? parseInt(ballsMatch[1], 10) : 100;
 
   return {
     nick: 'Submarino2',
     port: 9223,
-    trainerLevel: trainerMatch ? parseInt(trainerMatch[2], 10) : 8,
+    trainerLevel: trainerMatch ? parseInt(trainerMatch[2], 10) : 16,
     trainerXpCur: trainerMatch ? parseNumber(trainerMatch[3]) : 0,
     trainerXpMax: trainerMatch ? parseNumber(trainerMatch[4]) : 0,
     coins: trainerMatch ? parseNumber(trainerMatch[5]) : 0,
     species: pokeMatch ? pokeMatch[1] : 'Bulbasaur',
-    pokeLevel: pokeMatch ? parseInt(pokeMatch[2], 10) : 8,
-    power: pokeMatch ? parseInt(pokeMatch[3], 10) : 21,
-    hpCur: pokeMatch ? parseInt(pokeMatch[8], 10) : 132,
-    hpMax: pokeMatch ? parseInt(pokeMatch[9], 10) : 132,
+    pokeLevel: pokeMatch ? parseInt(pokeMatch[2], 10) : 16,
+    power: pokeMatch ? parseInt(pokeMatch[3], 10) : 47,
+    hpCur: pokeMatch ? parseInt(pokeMatch[8], 10) : 252,
+    hpMax: pokeMatch ? parseInt(pokeMatch[9], 10) : 312,
     pokeXpCur: pokeMatch ? parseNumber(pokeMatch[10]) : 0,
     pokeXpMax: pokeMatch ? parseNumber(pokeMatch[11]) : 0,
     hunt: raw.result.value.hunt,
-    isEco: raw.result.value.isEco
+    isEco: raw.result.value.isEco,
+    ballsCount
   };
 }
 

@@ -125,12 +125,29 @@ async function queryAcc(session, isAcc1) {
       const fullText = document.body.innerText;
       const hunt = Array.from(document.querySelectorAll('button')).find(b => b.innerText.includes('nível'))?.innerText || '';
       const hudLog = document.querySelector('#hud-log')?.innerText || '';
-      return { fullText, hunt, hudLog };
+      const isPaused = fullText.includes('esta sessão foi pausada') || fullText.includes('conta aberta em outro');
+
+      // Estoque de pokebolas
+      let ballsCount = null;
+      const chip = document.querySelector('.auto-chip');
+      if (chip) ballsCount = parseInt(chip.innerText.trim(), 10);
+      if (ballsCount == null || isNaN(ballsCount)) {
+        const ballBtn = Array.from(document.querySelectorAll('.caidos-bola')).find(b => (b.getAttribute('title') || '').includes('você tem'));
+        if (ballBtn) {
+          const m = ballBtn.getAttribute('title').match(/você tem\\s*(\\d+)/i);
+          if (m) ballsCount = parseInt(m[1], 10);
+        }
+      }
+
+      return { fullText, hunt, hudLog, isPaused, ballsCount };
     })()`,
     returnByValue: true
   }, session.sessionId);
 
-  const fullText = raw.result.value.fullText;
+  const val = raw.result.value;
+  const fullText = val.fullText;
+  const isPaused = val.isPaused;
+  const ballsCount = val.ballsCount != null ? val.ballsCount : 100;
   const nick = isAcc1 ? 'Submarino' : 'Submarino2';
   const port = isAcc1 ? 9222 : 9223;
 
@@ -138,18 +155,18 @@ async function queryAcc(session, isAcc1) {
   const pokeMatch = fullText.match(/(Charmander|Charmeleon|Charizard|Bulbasaur|Ivysaur|Venusaur)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
 
   const species = pokeMatch ? pokeMatch[1] : (isAcc1 ? 'Charmander' : 'Bulbasaur');
-  const pokeLevel = pokeMatch ? parseInt(pokeMatch[2], 10) : (isAcc1 ? 18 : 14);
-  const trainerLevel = trainerMatch ? parseInt(trainerMatch[2], 10) : (isAcc1 ? 18 : 14);
+  const pokeLevel = pokeMatch ? parseInt(pokeMatch[2], 10) : (isAcc1 ? 19 : 16);
+  const trainerLevel = trainerMatch ? parseInt(trainerMatch[2], 10) : (isAcc1 ? 19 : 16);
   const coins = trainerMatch ? parseNumber(trainerMatch[5]) : 0;
-  const power = pokeMatch ? parseInt(pokeMatch[3], 10) : (isAcc1 ? 53 : 41);
-  const hpCur = pokeMatch ? parseInt(pokeMatch[8], 10) : (isAcc1 ? 278 : 220);
-  const hpMax = pokeMatch ? parseInt(pokeMatch[9], 10) : (isAcc1 ? 324 : 276);
+  const power = pokeMatch ? parseInt(pokeMatch[3], 10) : (isAcc1 ? 55 : 47);
+  const hpCur = pokeMatch ? parseInt(pokeMatch[8], 10) : (isAcc1 ? 348 : 252);
+  const hpMax = pokeMatch ? parseInt(pokeMatch[9], 10) : (isAcc1 ? 348 : 312);
   const pokeXpCur = pokeMatch ? parseNumber(pokeMatch[10]) : 0;
   const pokeXpMax = pokeMatch ? parseNumber(pokeMatch[11]) : 0;
   const trainerXpCur = trainerMatch ? parseNumber(trainerMatch[3]) : 0;
   const trainerXpMax = trainerMatch ? parseNumber(trainerMatch[4]) : 0;
-  const hunt = raw.result.value.hunt || (isAcc1 ? 'Paras · nível 1' : 'Geodude · nível 1');
-  const hudLog = raw.result.value.hudLog;
+  const hunt = val.hunt || (isAcc1 ? 'Paras · nível 1' : 'Geodude · nível 1');
+  const hudLog = val.hudLog;
 
   return {
     nick,
@@ -166,7 +183,9 @@ async function queryAcc(session, isAcc1) {
     pokeXpCur,
     pokeXpMax,
     hunt,
-    hudLog
+    hudLog,
+    isPaused,
+    ballsCount
   };
 }
 
@@ -234,10 +253,20 @@ async function startStreamer() {
             });
           }
 
+          // Auto-Resume Watchdog se a sessão for pausada
+          if (acc.isPaused && !prev.wasPaused) {
+            console.log(`[Watchdog] Conta ${acc.nick} (Porta ${acc.port}) pausada. Enviando recarregamento automático...`);
+            const targetSession = acc.port === 9222 ? session1 : session2;
+            if (targetSession) {
+              targetSession.cdp.send('Page.reload').catch(() => {});
+            }
+          }
+
           lastState[acc.port] = {
             pokeLevel: acc.pokeLevel,
             trainerLevel: acc.trainerLevel,
-            lastLog: acc.hudLog
+            lastLog: acc.hudLog,
+            wasPaused: acc.isPaused
           };
         }
 

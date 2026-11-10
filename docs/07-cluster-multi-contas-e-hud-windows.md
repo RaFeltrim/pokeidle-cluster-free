@@ -1,9 +1,9 @@
 # 07 — Arquitetura de Cluster Multi-Contas & HUD Nativa Windows
 
 > **Projeto:** Pokéidle 24/7 Dual-Account Farming & Native Windows Monitoring  
-> **Status Operacional:** ✅ Ativo e Estabilizado  
-> **Saldo Consolidado:** > 550.000 Coins  
-> **Contas:** `Submarino` (Porta 9222) & `Submarino2` (Porta 9223)  
+> **Status Operacional:** ✅ Ativo e Estabilizado (Watchdog Anti-Pausa & Telemetria em Tempo Real)  
+> **Saldo Consolidado:** > 660.000 Coins  
+> **Contas:** `Submarino` (Porta 9222 · Charmander Nv. 20) & `Submarino2` (Porta 9223 · Bulbasaur Nv. 17)  
 
 ---
 
@@ -111,3 +111,4 @@ A interface nativa foi construída em WPF e PowerShell:
 | [`iniciar_hud.vbs`](file:///c:/Users/Rafael%20Feltrim/Downloads/Jogos-Idle/PokeIdle/iniciar_hud.vbs) | Inicialização 100% silenciosa (zero janelas de prompt na tela). |
 | [`parar_cluster.bat`](file:///c:/Users/Rafael%20Feltrim/Downloads/Jogos-Idle/PokeIdle/parar_cluster.bat) | Encerra com segurança todos os navegadores, servidores Node e a HUD. |
 | `node src/analyzer.js` | Exibe o relatório instantâneo de telemetria no terminal. |
+

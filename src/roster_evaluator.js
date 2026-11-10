@@ -24,7 +24,7 @@ function parseQuality(qStr) {
 
 /**
  * Calcula o Score Competitivo do espécime
- * @param {Object} poke - Objeto com { potency, quality, ivTotal, topStatIV }
+ * @param {Object} poke - Objeto com { potency, quality, ivTotal, speedIV }
  */
 function computeCompetitiveScore(poke) {
   const quality = parseQuality(poke.quality);
@@ -34,11 +34,21 @@ function computeCompetitiveScore(poke) {
   else if (poke.potency === 'P3') potencyMult = 1.10;
   else if (poke.potency === 'P2') potencyMult = 1.05;
 
-  const ivTotal = poke.ivTotal || 100;
+  const ivTotal = Math.min(192, Math.max(0, poke.ivTotal || 100)); // 6 atributos × 32 = 192 max
+  const speedIV = Math.min(32, Math.max(0, poke.speedIV || Math.round(ivTotal / 6)));
   const isShiny = !!poke.isShiny;
 
-  // Score composto ponderado
-  const baseScore = (ivTotal / 186) * 40 + (quality / 1.8) * 30 + (potencyMult / 2.0) * 30;
+  // Score composto ponderado:
+  // - IVs gerais: 30%
+  // - Speed prioritária (CDR supremo): 20%
+  // - Qualidade escalonamento: 25%
+  // - Potência multiplicadora: 25%
+  const ivScore = (ivTotal / 192) * 30;
+  const speedScore = (speedIV / 32) * 20;
+  const qualityScore = (quality / 1.8) * 25;
+  const potencyScore = (potencyMult / 2.0) * 25;
+
+  const baseScore = ivScore + speedScore + qualityScore + potencyScore;
   const shinyMultiplier = isShiny ? 3.0 : 1.0;
 
   return Math.round(baseScore * shinyMultiplier * 10) / 10;

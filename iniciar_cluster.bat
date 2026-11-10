@@ -58,7 +58,7 @@ node src/auto_catcher.js 9223 >nul 2>&1
 start /B node src/streamer.js >nul 2>&1
 
 :: Inicia a Mini HUD Nativa Windows (WPF Master-Detail Flutuante e Minimizavel)
-start "" powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -STA -Command "& '%~dp0src\hud_windows.ps1'"
+start "" powershell.exe -ExecutionPolicy Bypass -NoProfile -STA -File "%~dp0src\hud_windows.ps1"
 
 echo.
 echo =====================================================================

@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const WebSocket = require('ws');
 
 async function getBrowserWsUrl() {
   const devtoolsPortPath = 'C:\\Users\\Rafael Feltrim\\AppData\\Local\\Google\\Chrome\\User Data\\DevToolsActivePort';

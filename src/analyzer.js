@@ -108,8 +108,8 @@ async function inspectAcc1() {
   cdp.close();
 
   const fullText = raw.result.value.fullText;
-  const trainerMatch = fullText.match(/(Submarino)\s+Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
-  const pokeMatch = fullText.match(/(Charmander|Charmeleon|Charizard)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
+  const trainerMatch = fullText.match(/(?:([A-Za-z0-9_]+)\s+)?Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
+  const pokeMatch = fullText.match(/([A-Za-z0-9\-]+)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
   const ballsMatch = fullText.match(/você tem\s*(\d+)/i);
   const ballsCount = ballsMatch ? parseInt(ballsMatch[1], 10) : 100;
 
@@ -164,8 +164,8 @@ async function inspectAcc2() {
   cdp.close();
 
   const fullText = raw.result.value.fullText;
-  const trainerMatch = fullText.match(/(Submarino2)\s+Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
-  const pokeMatch = fullText.match(/(Bulbasaur|Ivysaur|Venusaur)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
+  const trainerMatch = fullText.match(/(?:([A-Za-z0-9_]+)\s+)?Nv\s+(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp\s+([\d.]+)/i);
+  const pokeMatch = fullText.match(/([A-Za-z0-9\-]+)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
   const ballsMatch = fullText.match(/você tem\s*(\d+)/i);
   const ballsCount = ballsMatch ? parseInt(ballsMatch[1], 10) : 100;
 

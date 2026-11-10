@@ -1,7 +1,7 @@
 Set WshShell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 currentDir = fso.GetParentFolderName(WScript.ScriptFullName)
-mgrPath = currentDir & "\src\cluster_manager.js"
+psScript = currentDir & "\src\hud_windows.ps1"
 
-' Executa o supervisor em modo 100% oculto (0 = sem janela, False = nao bloqueia)
-WshShell.Run """C:\Program Files\nodejs\node.exe"" """ & mgrPath & """", 0, False
+' Executa a HUD Windows via PowerShell STA sem janela preta de console
+WshShell.Run "powershell.exe -ExecutionPolicy Bypass -NoProfile -STA -File """ & psScript & """", 0, False

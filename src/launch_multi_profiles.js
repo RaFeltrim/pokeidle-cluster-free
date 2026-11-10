@@ -10,7 +10,7 @@ const BASE_PROFILES_DIR = 'C:\\temp\\pokeidle_profiles';
 
 // Configuração das 4 contas oficiais (limite legal do servidor)
 const ACCOUNTS_CONFIG = [
-  { id: 1, name: 'Submarino', role: 'Main (Charmander)', port: 9222, defaultProfile: true },
+  { id: 1, name: 'Submarino', role: 'Main (Charmander)', port: 9222, dir: path.join(BASE_PROFILES_DIR, 'acc_1') },
   { id: 2, name: 'Submarino2', role: 'Alt 1 (Bulbasaur)', port: 9223, dir: path.join(BASE_PROFILES_DIR, 'acc_2') },
   { id: 3, name: 'Submarino3', role: 'Alt 2 (Squirtle)', port: 9224, dir: path.join(BASE_PROFILES_DIR, 'acc_3') },
   { id: 4, name: 'Submarino4', role: 'Alt 3 (Pikachu/Torchic)', port: 9225, dir: path.join(BASE_PROFILES_DIR, 'acc_4') }

@@ -15,7 +15,7 @@ const http = require('http');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const LOG_FILE = path.join(ROOT_DIR, 'data', 'cluster_manager.log');
-const NODE_BIN = 'C:\\Program Files\\nodejs\\node.exe';
+const NODE_BIN = process.execPath;
 const CHROME_BIN = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const PROFILE_ACC1 = 'C:\\temp\\pokeidle_profiles\\acc_1';
 const PROFILE_ACC2 = 'C:\\temp\\pokeidle_profiles\\acc_2';
@@ -69,7 +69,7 @@ async function ensureWebhookHub() {
   if (!running) {
     log('Iniciando Webhook Hub (porta 4567)...');
     hubProcess = spawn(NODE_BIN, [path.join(ROOT_DIR, 'src', 'webhook_hub.js')], {
-      stdio: 'pipe'
+      stdio: 'ignore'
     });
     hubProcess.on('exit', (code) => {
       log(`Webhook Hub finalizado com código ${code}.`);
@@ -98,7 +98,7 @@ async function ensureChrome1() {
       '--window-position=-32000,-32000',
       '--window-size=1024,768',
       'https://pokeidle.io/app'
-    ], { stdio: 'pipe' });
+    ], { stdio: 'ignore' });
 
     chrome1Process.on('exit', (code) => {
       log(`Chrome 9222 finalizado com código ${code}.`);
@@ -127,7 +127,7 @@ async function ensureChrome2() {
       '--window-position=-32000,-32000',
       '--window-size=1024,768',
       'https://pokeidle.io/app'
-    ], { stdio: 'pipe' });
+    ], { stdio: 'ignore' });
 
     chrome2Process.on('exit', (code) => {
       log(`Chrome 9223 finalizado com código ${code}.`);
@@ -172,7 +172,7 @@ function ensureAutoCatchers() {
 function ensureStreamer() {
   if (!streamerProcess) {
     log('Iniciando Streamer de Telemetria Persistente...');
-    streamerProcess = spawn(NODE_BIN, [path.join(ROOT_DIR, 'src', 'streamer.js')], { stdio: 'pipe' });
+    streamerProcess = spawn(NODE_BIN, [path.join(ROOT_DIR, 'src', 'streamer.js')], { stdio: 'ignore' });
     streamerProcess.on('exit', (code) => {
       log(`Streamer de telemetria finalizado com código ${code}.`);
       streamerProcess = null;
@@ -187,9 +187,8 @@ function ensureHud() {
     hudProcess = spawn('powershell.exe', [
       '-ExecutionPolicy', 'Bypass',
       '-NoProfile',
-      '-WindowStyle', 'Hidden',
       '-STA',
-      '-Command', `& '${hudScript}'`
+      '-File', hudScript
     ], { stdio: 'ignore' });
 
     hudProcess.on('exit', (code) => {
@@ -199,8 +198,15 @@ function ensureHud() {
   }
 }
 
+let cyclesCount = 0;
 async function supervisionCycle() {
   try {
+    cyclesCount++;
+    if (cyclesCount % 10 === 0) {
+      // Revalida a injeção do auto-catcher periodicamente caso a página tenha recarregado
+      catcher1Installed = false;
+      catcher2Installed = false;
+    }
     await ensureWebhookHub();
     await ensureChrome1();
     await ensureChrome2();

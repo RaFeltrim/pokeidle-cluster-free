@@ -1,4 +1,5 @@
 @echo off
 cd /d "%~dp0"
-start "PokeIdleCluster" /MIN "C:\Program Files\nodejs\node.exe" src\cluster_manager.js
+title PokeIdle HUD
+start "" powershell.exe -ExecutionPolicy Bypass -NoProfile -STA -File "%~dp0src\hud_windows.ps1"
 exit

@@ -139,7 +139,24 @@ async function queryAcc(session, isAcc1) {
         }
       }
 
-      return { fullText, hunt, hudLog, isPaused, ballsCount };
+      // Auto-Recuperação se a equipe desmaiar e for para o Centro Pokémon
+      const ecoOnde = document.querySelector('#eco-onde')?.innerText || '';
+      const isFora = fullText.includes('fora da caça') || ecoOnde.includes('Centro Pokemon');
+      if (isFora) {
+        const curarBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.includes('Curar'));
+        if (curarBtn) curarBtn.click();
+
+        const targetSlug = ${isAcc1 ? "'paras'" : "'geodude'"};
+        let huntBtn = document.querySelector('button.ml-linha[data-slug="' + targetSlug + '"]');
+        if (!huntBtn) {
+          const mapaBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.trim() === 'Mapa');
+          if (mapaBtn) mapaBtn.click();
+          huntBtn = document.querySelector('button.ml-linha[data-slug="' + targetSlug + '"]');
+        }
+        if (huntBtn) huntBtn.click();
+      }
+
+      return { fullText, hunt: ecoOnde || hunt, hudLog, isPaused, ballsCount, isFora };
     })()`,
     returnByValue: true
   }, session.sessionId);
@@ -152,7 +169,7 @@ async function queryAcc(session, isAcc1) {
   const port = isAcc1 ? 9222 : 9223;
 
   const trainerMatch = fullText.match(new RegExp('(' + nick + ')\\s+Nv\\s+(\\d+)\\s+([\\d.]+)\\s*\\/\\s*([\\d.]+)\\s*xp\\s+([\\d.]+)', 'i'));
-  const pokeMatch = fullText.match(/(Charmander|Charmeleon|Charizard|Bulbasaur|Ivysaur|Venusaur)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
+  const pokeMatch = fullText.match(/([A-Za-z0-9\-]+)\s+Nv\s+(\d+)\s+(?:[A-Z\s\/]+)?poder\s+(\d+)\s+(P\d+)\s+IV\s+(\d+)\s+Q\s+([\d,.]+)\s+N\s+([\d,.]+)\s+(\d+)\s*\/\s*(\d+)\s+([\d.]+)\s*\/\s*([\d.]+)\s*xp/i);
 
   const species = pokeMatch ? pokeMatch[1] : (isAcc1 ? 'Charmander' : 'Bulbasaur');
   const pokeLevel = pokeMatch ? parseInt(pokeMatch[2], 10) : (isAcc1 ? 19 : 16);
@@ -270,22 +287,12 @@ async function startStreamer() {
           };
         }
 
-        // 2. Post STATS_UPDATE to Hub
+        // 2. Post STATS_UPDATE to Hub (Webhook Hub centraliza sincronização no game_history.json)
         postToHub({
           type: 'STATS_UPDATE',
           accounts,
           timestamp: now
         });
-
-        // 3. Update game_history.json
-        if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-        let history = [];
-        try {
-          if (fs.existsSync(HISTORY_FILE)) history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8'));
-        } catch (_) {}
-        history.push({ timestamp: now, accounts });
-        if (history.length > 150) history.shift();
-        fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
       }
     } catch (_) {}
 

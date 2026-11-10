@@ -1,9 +1,9 @@
 # 07 — Arquitetura de Cluster Multi-Contas & HUD Nativa Windows
 
 > **Projeto:** Pokéidle 24/7 Dual-Account Farming & Native Windows Monitoring  
-> **Status Operacional:** ✅ Ativo e Estabilizado (Watchdog Anti-Pausa & Telemetria em Tempo Real)  
-> **Saldo Consolidado:** > 660.000 Coins  
-> **Contas:** `Submarino` (Porta 9222 · Charmander Nv. 20) & `Submarino2` (Porta 9223 · Bulbasaur Nv. 17)  
+> **Status Operacional:** ✅ Ativo e Estabilizado (Watchdog Anti-Pausa, Auto-Recuperação de Centro Pokémon & Telemetria em Tempo Real)  
+> **Saldo Consolidado:** > 2.200.000 Coins Acumuladas  
+> **Contas:** `Submarino` (Porta 9222 · Charmander Nv. 28) & `Submarino2` (Porta 9223 · Bulbasaur Nv. 28)  
 
 ---
 
@@ -100,10 +100,23 @@ A interface nativa foi construída em WPF e PowerShell:
 - **Visão Master-Detail:**
   - **Visão Geral:** Saldo consolidado, cards individuais das contas, área de caça atual, HP e destaques da última hora.
   - **Visão de Detalhe:** Ao clicar no card de uma conta, expande barras de HP, XP do Pokémon, poder, IVs e histórico individual de eventos. Botão `‹ Voltar ao Cluster` retorna ao resumo.
+  - **Gerenciamento de Credenciais:** Modal interativo de *Alterar Senha* (com aviso de segurança e tooltip ❓) e botão *Sair da Conta* para desacoplamento de credenciais locais.
 
 ---
 
-## 🚀 6. Guia Rápido de Comandos
+## 🛡️ 6. Auto-Recuperação & Watchdog 24/7 (Centro Pokémon)
+
+Durante combates contínuos, caso as poções e revives da mochila se esgotem e a equipe desmaie, o servidor do Pokéidle redireciona o treinador automaticamente para o `Centro Pokemon · Cerulean`, colocando o estado da sessão como `fora da caça`.
+
+- **Mecanismo de Auto-Recuperação (`src/streamer.js`):**
+  1. Detecta o indicador `fora da caça` ou elemento `#eco-onde` no Centro Pokémon.
+  2. Executa clique imediato no botão `Curar equipe`, restaurando o HP do Pokémon a 100%.
+  3. Abre o seletor do mapa e clica diretamente na rota alvo (`data-slug="paras"` na Conta 1 e `data-slug="geodude"` na Conta 2).
+  4. Restaura o farm e a caça automaticamente sem necessidade de intervenção do operador.
+
+---
+
+## 🚀 7. Guia Rápido de Comandos
 
 | Arquivo | Função |
 | :--- | :--- |

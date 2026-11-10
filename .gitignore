@@ -8,3 +8,4 @@ data/live_events.json
 .vscode/
 .idea/
 *.tmp
+graphify-out/

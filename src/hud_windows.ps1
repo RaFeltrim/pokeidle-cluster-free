@@ -19,6 +19,13 @@ try {
     }
 } catch {}
 
+# Single-Instance Mutex (evita múltiplas instâncias concorrentes da HUD)
+$script:hudMutex = New-Object System.Threading.Mutex($false, "Global\PokeIdle_Cluster_HUD_Mutex")
+if (-not $script:hudMutex.WaitOne(0, $false)) {
+    # Outra instância da HUD já está em execução no sistema
+    exit
+}
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projectRoot = Split-Path -Parent $scriptDir
 $historyFile = Join-Path $projectRoot "data\game_history.json"
@@ -43,9 +50,7 @@ $emojiSword = [char]::ConvertFromUtf32(0x2694)
     Background="Transparent" 
     Topmost="True" 
     ShowInTaskbar="True"
-    WindowStartupLocation="Manual"
-    Left="30"
-    Top="30">
+    WindowStartupLocation="CenterScreen">
     
     <Border Background="#F00F172A" BorderBrush="#4064748B" BorderThickness="1" CornerRadius="14" Margin="5">
         <Border.Effect>

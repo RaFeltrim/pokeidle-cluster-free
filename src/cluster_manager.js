@@ -19,6 +19,7 @@ const NODE_BIN = process.execPath;
 const CHROME_BIN = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const PROFILE_ACC1 = 'C:\\temp\\pokeidle_profiles\\acc_1';
 const PROFILE_ACC2 = 'C:\\temp\\pokeidle_profiles\\acc_2';
+const enableHud = !process.argv.includes('--no-hud');
 
 function log(msg) {
   const line = `[${new Date().toLocaleTimeString('pt-BR')}] ${msg}\n`;
@@ -181,6 +182,7 @@ function ensureStreamer() {
 }
 
 function ensureHud() {
+  if (!enableHud) return;
   if (!hudProcess) {
     log('Iniciando Pokéidle Cluster HUD (WPF + System Tray)...');
     const hudScript = path.join(ROOT_DIR, 'src', 'hud_windows.ps1');

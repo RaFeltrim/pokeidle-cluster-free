@@ -31,12 +31,13 @@
 ## 📌 Informações Gerais
 
 - **Plataforma Alvo:** [Pokéidle.io](https://pokeidle.io/) (Cliente Web: [https://pokeidle.io/app](https://pokeidle.io/app))
+- **Versão Atual do Patch:** `v1.416.0` (Sincronizado e validado via CDP)
 - **Lançamento Oficial:** `07/09/2026` (*Fasi Sistemas e Tecnologias / Pedro Henrique Reis Rodrigues*)
 - **Escala do Jogo:** 1.277 Espécies (Gerações 1 a 9), 752 Hunts, 796 Shinies, 18 Ginásios Elementais e Outlands 1 a 8.
 - **Topologia do Cluster:** Dual-Account Off-Screen (`--window-position=-32000,-32000`)
-  - **Conta 1 (Porta 9222):** `Submarino` (Charmander Nv. 28 · Rota de Paras Nv. 1 · Perfil `acc_1`)
-  - **Conta 2 (Porta 9223):** `Submarino2` (Bulbasaur Nv. 28 · Rota de Geodude Nv. 1 · Perfil `acc_2`)
-- **Saldo Consolidado:** **+2.200.000 Coins** acumuladas autonomamente em farm contínuo.
+  - **Conta 1 (Porta 9222):** `Submarino` (Charmander Nv. 32 · Rota Bulbasaur Nv. 20 / Beedrill Nv. 30 · Perfil `acc_1`)
+  - **Conta 2 (Porta 9223):** `Submarino2` (Bulbasaur Nv. 28 · Rota Diglett Nv. 10 / Geodude Nv. 1 · Perfil `acc_2`)
+- **Saldo Consolidado:** **+2.350.000 Coins** acumuladas autonomamente em farm contínuo.
 - **Repositórios Oficiais no GitHub:**
   - 🔒 **Privado:** [`RaFeltrim/pokeidle-cluster-private`](https://github.com/RaFeltrim/pokeidle-cluster-private)
   - 🌐 **Público (Open-Source):** [`RaFeltrim/pokeidle-cluster-free`](https://github.com/RaFeltrim/pokeidle-cluster-free)

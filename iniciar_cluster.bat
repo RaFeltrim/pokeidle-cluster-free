@@ -57,6 +57,9 @@ node src/auto_catcher.js 9223 >nul 2>&1
 :: Inicia o Streamer Persistente em tempo real
 start /B node src/streamer.js >nul 2>&1
 
+:: Inicia o Motor de Auto-Heal e Progressao de Nivel
+start /B node src/auto_heal_and_progression.js >nul 2>&1
+
 :: Inicia a Mini HUD Nativa Windows (WPF Master-Detail Flutuante e Minimizavel)
 start "" powershell.exe -ExecutionPolicy Bypass -NoProfile -STA -File "%~dp0src\hud_windows.ps1"
 

@@ -60,6 +60,7 @@ let hubProcess = null;
 let chrome1Process = null;
 let chrome2Process = null;
 let streamerProcess = null;
+let healerProcess = null;
 let hudProcess = null;
 
 let catcher1Installed = false;
@@ -181,6 +182,20 @@ function ensureStreamer() {
   }
 }
 
+function ensureAutoHealer() {
+  if (!healerProcess) {
+    const healerScript = path.join(ROOT_DIR, 'src', 'auto_heal_and_progression.js');
+    if (fs.existsSync(healerScript)) {
+      log('Iniciando Auto-Heal & Progression Engine...');
+      healerProcess = spawn(NODE_BIN, [healerScript], { stdio: 'ignore' });
+      healerProcess.on('exit', (code) => {
+        log(`Auto-Healer finalizado com código ${code}.`);
+        healerProcess = null;
+      });
+    }
+  }
+}
+
 function ensureHud() {
   if (!enableHud) return;
   if (!hudProcess) {
@@ -214,6 +229,7 @@ async function supervisionCycle() {
     await ensureChrome2();
     ensureAutoCatchers();
     ensureStreamer();
+    ensureAutoHealer();
     ensureHud();
   } catch (err) {
     log(`Erro no ciclo de supervisão: ${err.message}`);

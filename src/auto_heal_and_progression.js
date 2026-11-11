@@ -195,8 +195,8 @@ async function healAndProgressAccount(portOrSession, options = {}) {
         const curarBtn = Array.from(document.querySelectorAll('button')).find(b => b.innerText.includes('Curar'));
         const isFora = fullText.includes('fora da caça') || ecoOnde.includes('Centro Pokemon') || fullText.includes('desmaiou') || !!curarBtn;
         
-        // Extrai espécie e nível do Pokémon ativo
-        const pokeMatch = fullText.match(/([A-Za-z0-9\\-]+)\\s+Nv\\s+(\\d+)/i);
+        // Extrai espécie e nível do Pokémon ativo (priorizando bloco EM CAMPO)
+        const pokeMatch = fullText.match(/EM CAMPO\s+([A-Za-z0-9\\-]+)\s+Nv\s+(\\d+)/i) || fullText.match(/([A-Za-z0-9\\-]+)\s+Nv\s+(\\d+)\s+(?:[A-Z\\s\\/]+)?poder/i);
         const pokeSpecies = pokeMatch ? pokeMatch[1] : (${port === 9222} ? 'Charmander' : 'Bulbasaur');
         const pokeLevel = pokeMatch ? parseInt(pokeMatch[2], 10) : 28;
 
